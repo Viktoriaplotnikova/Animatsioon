@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.opilane.animatsioon.MainActivity">
+
+    <ImageView
+        android:id="@+id/banaan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/banaan"
+        android:layout_marginTop="60dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/zoom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/banaan"
+        android:text="@string/zoom"
+        android:layout_marginTop="40dp"
+        android:onClick="zoom"/>
+
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/clockwise"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:layout_below="@+id/banaan"
+    android:text="@string/clock"
+    android:layout_marginTop="40dp"
+     android:onClick="clockwise"   />
+
+    <Button
+        android:id="@+id/Blink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/clockwise"
+        android:layout_alignBottom="@+id/clockwise"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Blink"
+        android:onClick="Blink"/>
+
+    <Button
+        android:id="@+id/Slide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/zoom"
+        android:layout_marginTop="15dp"
+        android:text="@string/Slide"
+        android:onClick="Slide"/>
+
+    <Button
+        android:id="@+id/fade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Slide"
+        android:layout_alignBottom="@+id/Slide"
+        android:layout_alignLeft="@+id/clockwise"
+        android:layout_alignStart="@+id/clockwise"
+        android:text="@string/Fade"
+        android:onClick="Fade"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/move"
+        android:text="@string/MOVE"
+        android:layout_below="@+id/Blink"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"/>
+
+</RelativeLayout>

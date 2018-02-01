@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Animatsioon</string>
+    <string name="zoom">Zoom</string>
+    <string name="clock">Clockwise</string>
+    <string name="Blink">Blink</string>
+    <string name="Move">Move</string>
+    <string name="Slide">Slide</string>
+    <string name="Fade">Fade</string>
+    <string name="move">move</string>
+    <string name="MOVE">Move</string>
+</resources>
